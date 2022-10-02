@@ -20,6 +20,11 @@ class _BottomBarState extends State<BottomBar> {
         child: Text("My body"),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        elevation: 10,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        selectedItemColor: Colors.blueGrey,
+        unselectedItemColor: const Color.fromARGB(255, 183, 186, 194),
         items: const [
           BottomNavigationBarItem(label: "Home", icon: Icon(Icons.home)),
           BottomNavigationBarItem(label: "Search", icon: Icon(Icons.search)),
